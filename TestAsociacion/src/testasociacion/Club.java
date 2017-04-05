@@ -27,14 +27,17 @@ public class Club {
         this.colaboradores = colaboradores;//
     }
 public Club() {
-        this.nombre = "Seba";//nombre del club
+        this.nombre = "club seba";//nombre del club
         this.actividad = "anda a Laaaar";//actividad del club
-        this.secretario = new Amigo();//secretario 
-        this.tesorero = new Amigo();//tesorero
+        this.secretario = new Amigo("Stark",20,this);//secretario 
+        this.tesorero = new Amigo("Seba",21,this);//tesorero
         this.colaboradores = new ArrayList<Amigo>();//
     }
 
-    
+    public void insartador(Amigo colaborador){
+        this.colaboradores.add(colaborador);
+        colaborador.setCoordinado(this);
+    }
 
     public String getNombre() {
         return nombre;

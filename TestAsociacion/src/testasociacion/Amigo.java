@@ -11,8 +11,30 @@ package testasociacion;
  */
 public class Amigo {
     private String nombre;
-    private String edad;
+    private int edad;
     // atributos de asosiacion
-    private Club coordinador;
+    private Club coordinado;
+
+    public Amigo(String nombre, int edad, Club coordinado) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.coordinado = coordinado;
+    }
+    public Amigo (String nombre , int edad){
+        this.nombre= nombre;
+        this.edad=edad;
+    }
+
+    public Club getCoordinado() {
+        return coordinado;
+    }
+
+    public void setCoordinado(Club coordinado) {
+        this.coordinado = coordinado;
+    }
+
+   
+    
+    
     
 }

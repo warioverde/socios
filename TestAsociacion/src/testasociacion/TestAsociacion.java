@@ -15,7 +15,9 @@ public class TestAsociacion {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Club miclub = new Club();
+        miclub.insartador(new Amigo("Alvaro",12));
+        miclub.insartador(new Amigo("Mary Poppins",70));
     }
     
 }
